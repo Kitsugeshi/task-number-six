@@ -15,7 +15,7 @@ namespace task_number_six
                 Console.WriteLine("Введите число: ");
                 int n = Convert.ToInt32(Console.ReadLine());
                 stopWatch.Start();
-                var res = Requiem(n);
+                var res = Recursia(n);
                 stopWatch.Stop();
                 Console.WriteLine("Обычный цикл. Прошло времени: " + stopWatch.Elapsed);
                 stopWatch.Restart();
@@ -27,7 +27,7 @@ namespace task_number_six
             }
 
         }
-        static BigInteger Requiem(int x)
+        static BigInteger Recursia(int x)
         {
             BigInteger result = BigInteger.One;
             for (int i = 2; i <= x; i++)
